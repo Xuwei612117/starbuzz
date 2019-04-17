@@ -7,12 +7,12 @@ body {
 
 #header {
   background-color: #675c47;
-  margin: 10px 10px 0px 10px;
+  margin:           10px 10px 0px 10px;
   height:           108px;
 }
 
 #main {
-  display: table-cell;
+  display:table-cell;
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
@@ -20,12 +20,12 @@ body {
 }
 
 #sidebar {
-  display: table-cell;
+  display:table-cell;
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
-  width:            280px;
   vertical-align: top;
+
 }
 
 #footer {
@@ -33,10 +33,9 @@ body {
   color:            #efe5d0;
   text-align:       center;
   padding:          15px;
-  margin:  0px  10px  10px  10px;
+  margin:           0px 10px 10px 10px;
   font-size:        90%;
-
-}
+  }
 
 h1 {
   font-size:        120%;
@@ -61,26 +60,37 @@ a:visited {
   border-bottom:    thin dotted #675c47;
 }
 
-
-#drinks{
-  display: table-cell;
-  background-color: #efe5d0;
-  width:20%;
-  padding:15px;
-  vertical-align: top;
+#tableContainer{
+ display: table;
+border-spacing: 10px;
 }
-div#tableContaner{
-  display: table;
-}
-div#tableRow{
+#tableRow {
   display: table-row;
 }
 
-#tableContaner{
-display: table;
-border-spacing: 10px;
+#drink {
+display: table-cell;
+background-color: #efe5d0;
+width:20%;
+padding: 15px;
+vertical-align: top;
 
 }
-#tableRow{
-  display:table-row;
+.headerImageLeft{
+  float: left;
+  background-image:  url(images/header.gif);
+  width: 400px;
+  height: 100px;
+}
+.headerImageRight{
+  float: right;
+  background-image: url(images/header.gif);
+  width: 400px;
+  height: 100px;
+  background-position:  -400px,0px;
+}
+#award{
+  position: absolute;
+  top :30px;
+  left: 365px;
 }
