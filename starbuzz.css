@@ -97,12 +97,19 @@ div#tableRow{
   left:             365px;
 }
 
-#coupon{
+#coupon:hover{
   position:         fixed;
   top:              350px;
-  left:             -90px;
+  transform:translate(250px);
 }
 
 #coupon a, img{
   border:           none;
+}
+
+#coupon{
+  position:         fixed;
+  top:              350px;
+  left:             -250px;
+  transition:       0.5s;
 }
