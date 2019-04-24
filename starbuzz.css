@@ -16,7 +16,8 @@ main {
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
-  vertical-align: top;
+  display:          table-cell;
+  vertical-align:   top;
 }
 
 aside{
@@ -24,8 +25,8 @@ aside{
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
-  vertical-align: top;
-
+  display:          table-cell;
+  vertical-align:   top;
 }
 
 footer {
@@ -35,7 +36,7 @@ footer {
   padding:          15px;
   margin:           0px 10px 10px 10px;
   font-size:        90%;
-  }
+}
 
 h1 {
   font-size:        120%;
@@ -60,68 +61,80 @@ a:visited {
   border-bottom:    thin dotted #675c47;
 }
 
-#tableContainer{
- display: table;
-border-spacing: 10px;
-}
-#tableRow {
-  display: table-row;
+div#tableContainer{
+  display:          table;
+  border-spacing:   10px;
 }
 
-#drinks {
-display: table-cell;
-background-color: #efe5d0;
-width:20%;
-padding: 15px;
-vertical-align: top;
+div#tableRow{
+  display:          table-row; 
+}
 
+#drinks{
+  display:          table-cell;
+  background-color: #efe5d0;
+  width:            20%;
+  padding:          15px;
+  vertical-align:   top; 
 }
-.headerImageLeft{
-  float: left;
-  background-image:  url(images/header.gif);
-  width: 400px;
-  height: 100px;
-}
-.headerImageRight{
-  float: right;
+
+.headerImageleft{
+  float:            left;
   background-image: url(images/header.gif);
-  width: 400px;
-  height: 100px;
-  background-position:  -400px,0px;
+  width:            400px;
+  height:           100px;
 }
-#award{
-  position: absolute;
-  top :30px;
-  left: 365px;
-}
-#coupon{
-  position: fixed;
-  top:350px;
-  left:-90px;
-}
-#coupon a, img{
-  border: none;
 
+.headerImageright{
+  float:            right;
+  background-image: url(images/header.gif);
+  width:            400px;
+  height:           100px;
+  background-position: -400px,0px;
 }
+
+#award{
+  position:         absolute;
+  top:              30px;
+  left:             365px;
+}
+
+#coupon:hover{
+  position:         fixed;
+  top:              350px;
+  transform:translate(250px);
+}
+
+#coupon a, img{
+  border:           none;
+}
+
+#coupon{
+  position:         fixed;
+  top:              350px;
+  left:             -250px;
+  transition:       0.5s;
+}
+
 nav{
   background-color: #efe5d0;
-  margin:10px 10px 0px 10px;
+  margin:           10px 10px 0px 10px;
 }
 nav ul{
-  margin:0px;
-  list-style-type: none;
-  padding:5px 0px 5px 0px;
+  margin:             0px;
+  list-style-type:    none;
+  padding:            5px 0px 5px 0px;
 
 }
 
 nav ul li {
-  display:inline;
-  padding:5px 10px 5px 10px;
+  display:            inline;
+  padding:            5px 10px 5px 10px;
 }
 nav ul li a:link, nav ul li a:visited{
-  color:#954b4b;
-  border-bottom: none;
-  font-weight: bold;
+  color:            #954b4b;
+  border-bottom:      none;
+  font-weight:        bold;
 }
 nav ul li.selected{
   background-color: #c8b99c;
